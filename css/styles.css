@@ -1,6 +1,6 @@
 
 #container{
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 	font-family: 'Open Sans', Arial,sans-serif;
 	font-size: 15px;
@@ -79,4 +79,9 @@ blockquote{
 }
 blockquote:before, blockquote:after {
 	content: none;
+}
+@media (max-width: 960px){
+	#container{
+		width: 90%;
+	}
 }
