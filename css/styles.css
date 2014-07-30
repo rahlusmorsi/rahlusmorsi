@@ -33,7 +33,9 @@ footer{
 	clear:both;
 	padding: 2em 0;
 }
-
+header h1 img{
+	margin-top: -6px;
+}
 
 /*resume*/
 [data-role='experience']{
