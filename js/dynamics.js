@@ -1,13 +1,6 @@
 
 
 $(document).ready(function() {
-	// var mainHeight = $('#main').height();
-
-	// var asideHeight = $('aside').height();
-
-	// if ( mainHeight < asideHeight){
-	// 	$('#main').height(asideHeight);
-	// }
 
 	// Simple Gethub API demo by Jake Rocheleau.  Thank you Jake.
 	$('#githubApiData').html('<div id="loader"><img src="img/loader.gif" alt="loading..."></div>');
@@ -31,8 +24,6 @@ $(document).ready(function() {
 		var followersnum = json.followers;
 		var followingnum = json.following;
 		var reposnum     = json.public_repos;
-		
-		console.log(json);
 
 		if(fullname == undefined) { fullname = username; }
 		
