@@ -1,12 +1,12 @@
 body{
-	font-size: 15px;
+	font-size: 13px;
 	font-family: 'Open Sans', Arial,sans-serif;
 }
 .container{
+	width: auto;
 	max-width: 960px;
-	margin: 0 auto;
+	overflow: hidden;
 }
-
 h1,h2,h3{
 	font-weight: bold;
 }
@@ -36,7 +36,6 @@ footer{
 header h1 img{
 	margin-top: -6px;
 }
-
 /*resume*/
 [data-role='experience']{
 	float: right;
@@ -50,10 +49,17 @@ header h1 img{
 	margin-left: 5px;
 	padding-left: 5px;
 }
-
-
+@media (max-width: 480px){
+	#main, aside{
+		width: 100%;
+	}
+}
+@media (max-width: 706px){
+	[data-role='experience'] {
+		float: none;
+	}
+}
 @media (max-width: 960px){
-	.container{
-		width: 90%;
+	.container{	
 	}
 }
