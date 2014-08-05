@@ -58,4 +58,17 @@ $(document).ready(function() {
 	  }
 	});
   }
+
+  $('button#keys').on('click', function(){
+  	$(this).toggleClass('active');
+
+  	if( $(this).hasClass('active') ){
+		$(this).on('keydown', function(e){
+			console.log('You pressed the keyCode ' + String(e.keyCode) + ' key.');
+		})
+  	}
+  });
+
 });
+
+  
